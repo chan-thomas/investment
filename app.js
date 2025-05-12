@@ -1,9 +1,6 @@
 const express = require("express");
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
-const express = require("express");
-const passport = require("passport");
-const LocalStrategy = require("passport-local").Strategy;
 const app = express();
 const port = process.env.PORT || 3000;
 const userEmail = process.env.USER_EMAIL;
