@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Profile</h1>
+    <p>Welcome to your profile page!</p>
+    <div id="userProfile">
+        <h2>User Profile</h2>
+        <p><strong>Username:</strong> {{username}}</p>
+        <p><strong>Email:</strong> {{email}}</p>
+        <p><strong>Bio:</strong> {{bio}}</p>
+        <p><strong>Joined:</strong> {{joinedDate}}</p>
+        <p><strong>Last Login:</strong> {{lastLogin}}</p>
+        <p><strong>Profile Picture:</strong></p>
+        <img src="{{profilePicture}}" alt="Profile Picture" style="width: 150px; height: 150px;">
+    </div>
+    <div id="backtoMain">
+        <a href="/">Back to Main</a>
+    </div>
+</body>
+</html>
