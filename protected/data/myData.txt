@@ -1,0 +1,9 @@
+Student's Data.
+
+id,firstName,lastName,class
+3211, John, Smith, SWELL 102: Meditation: 1
+3211, John, Smith, CS 235: Data Structures and Algorithms: 3
+1234, lightning, mcqueen, CS 441: Internship: 6
+
+id,firstName,lastName,status,tuition
+3211,John, Smith,PT,1000

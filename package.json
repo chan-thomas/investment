@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "node --env-file=.env --watch app.js",
+    "dev": "node --env-file=.env --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,7 +23,11 @@
   "homepage": "https://github.com/chan-thomas/investment#readme",
   "description": "",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "connect-ensure-login": "^0.1.1",
     "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "morgan": "^1.10.0",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0"
   }

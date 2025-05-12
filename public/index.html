@@ -1,55 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investment</title>
+    <title>Mtech Student</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <h1>Investment</h1>
-    <div id="navigate">
-        <ul>
-            <li>
-                <a href="/login">Login</a>
-            </li>
-            <li>
-                <a href="/register">Register</a>
-            </li>
-            <li>
-                <a href="/profile">Profile</a>
-            </li>
-            <li>
-                <a href="/logout">Logout</a>
-            </li>
-        </ul>
-    </div>    
-    <form action="/login" method="POST">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-
-        <button type="submit">Login</button>
-    </form>
-    <div id="saving">
-        <div id="total-saving"></div>
-    </div>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', async () => {
-            try {
-                const response = await fetch('/totalsaving');
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
-                document.getElementById('total-saving').textContent = `Total Saving: $${data.total}`;
-            } catch (error) {
-                console.error('Error fetching total saving:', error);
-                document.getElementById('total-saving').textContent = 'Error loading total saving.';
-            }
-        });
-    </script>
+    <div><img src="/image/MTECH-Logo.jpg"></div>
+    <h1>Backend Day 13 - Mtech Student</h1>
+    <p>Mtech Student</p>
+    <h3>login as jack:password12345</h3>
+    <div><a href="/test">Test Protected Page</a></div>
+    <div><a href="/students">Protected Student's Page</a></div>
+    <div><a href="/login">Login </a></div>
+    <div><a href="/logout">Logout</a></div>
 </body>
+
 </html>
